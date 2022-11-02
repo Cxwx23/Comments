@@ -88,7 +88,7 @@ struct ContentView: View {
                 .listStyle(.plain)
                 .navigationBarTitle(Text("Comments"))
                 .navigationBarTitleDisplayMode(.inline)
-                
+
                 Spacer()
             }
             
