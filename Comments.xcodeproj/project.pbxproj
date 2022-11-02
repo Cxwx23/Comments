@@ -11,6 +11,11 @@
 		EDD2B4BF2912E9250008F465 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2B4BE2912E9250008F465 /* ContentView.swift */; };
 		EDD2B4C12912E9270008F465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD2B4C02912E9270008F465 /* Assets.xcassets */; };
 		EDD2B4C42912E9270008F465 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD2B4C32912E9270008F465 /* Preview Assets.xcassets */; };
+		EDD2B4DA29130EA20008F465 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2B4D929130EA20008F465 /* CommentModel.swift */; };
+		EDD2B4DE29130EF00008F465 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2B4DD29130EF00008F465 /* CommentViewModel.swift */; };
+		EDD2B4E229130F5B0008F465 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2B4E129130F5B0008F465 /* APIManager.swift */; };
+		EDD2B4E429130FE00008F465 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2B4E329130FE00008F465 /* CommentView.swift */; };
+		EDD2B4E72913104B0008F465 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2B4E62913104B0008F465 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		EDD2B4BE2912E9250008F465 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD2B4C02912E9270008F465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD2B4C32912E9270008F465 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDD2B4D929130EA20008F465 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		EDD2B4DD29130EF00008F465 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		EDD2B4E129130F5B0008F465 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		EDD2B4E329130FE00008F465 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		EDD2B4E62913104B0008F465 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				EDD2B4BC2912E9250008F465 /* CommentsApp.swift */,
-				EDD2B4BE2912E9250008F465 /* ContentView.swift */,
+				EDD2B4E52913103C0008F465 /* Helper */,
+				EDD2B4DF29130F0D0008F465 /* View */,
+				EDD2B4DC29130EC50008F465 /* ViewModel */,
+				EDD2B4DB29130EA60008F465 /* Model */,
+				EDD2B4E029130F2B0008F465 /* APIManager */,
 				EDD2B4C02912E9270008F465 /* Assets.xcassets */,
 				EDD2B4C22912E9270008F465 /* Preview Content */,
 			);
@@ -65,6 +79,47 @@
 				EDD2B4C32912E9270008F465 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDD2B4DB29130EA60008F465 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2B4D929130EA20008F465 /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDD2B4DC29130EC50008F465 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2B4DD29130EF00008F465 /* CommentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDD2B4DF29130F0D0008F465 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2B4BE2912E9250008F465 /* ContentView.swift */,
+				EDD2B4E329130FE00008F465 /* CommentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDD2B4E029130F2B0008F465 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2B4E129130F5B0008F465 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		EDD2B4E52913103C0008F465 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2B4E62913104B0008F465 /* Common.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD2B4E429130FE00008F465 /* CommentView.swift in Sources */,
+				EDD2B4DE29130EF00008F465 /* CommentViewModel.swift in Sources */,
 				EDD2B4BF2912E9250008F465 /* ContentView.swift in Sources */,
+				EDD2B4E229130F5B0008F465 /* APIManager.swift in Sources */,
+				EDD2B4DA29130EA20008F465 /* CommentModel.swift in Sources */,
 				EDD2B4BD2912E9250008F465 /* CommentsApp.swift in Sources */,
+				EDD2B4E72913104B0008F465 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
