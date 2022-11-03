@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @StateObject var vm = CommentViewModel()
     
     var body: some View {
@@ -16,13 +15,14 @@ struct ContentView: View {
             List {
                 ForEach(vm.comments) { comment in
                     CommentView(comment: comment)
+                        .padding(.bottom)
                 }
-                .listStyle(.plain)
-                .navigationBarTitle(Text("Comments"))
+                .navigationBarTitle(Label.title.rawValue)
                 .navigationBarTitleDisplayMode(.inline)
-
+                
                 Spacer()
             }
+            .listStyle(.plain)
         }
     }
 }

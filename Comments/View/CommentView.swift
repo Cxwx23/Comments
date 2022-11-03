@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct CommentView: View {
+    
     var comment: CommentModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text("Name: \(comment.name ?? "")")
+            Text(Label.name.rawValue + (comment.name ?? ""))
                 .font(.headline)
-            Text("Comment: \(comment.body ?? "")")
+            Text(Label.body.rawValue + (comment.body ?? ""))
+            Text(Label.email.rawValue + (comment.email ?? ""))
             HStack {
-                Text("PostID \(String(comment.postId ?? 0))")
+                Text(Label.id.rawValue + String(comment.id ?? 0))
                 Spacer()
-                Text("ID: \(String(comment.id ?? 0))")
+                Text(Label.postId.rawValue + String(comment.postId ?? 0))
                 Spacer()
             }
 
-            Text("Email: \(comment.email ?? "")")
+            
         }
-        Divider()
     }
 }
 

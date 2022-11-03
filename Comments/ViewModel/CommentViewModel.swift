@@ -16,7 +16,7 @@ class CommentViewModel: ObservableObject {
     }
     
     func getComments() {
-        getData(urlString: "https://jsonplaceholder.typicode.com/comments") { commentData in
+        getData(urlString: Server.Comment.rawValue) { commentData in
             DispatchQueue.main.async {
                 self.comments = commentData
             }
